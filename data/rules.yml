@@ -1,0 +1,30 @@
+version: "3.1"
+
+rules:
+
+- rule: Say বিদায় anytime the user says বিদায়
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'আমি একটি বট' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say 'টিকিট বুক করা হয়ে গেছে' anytime the user says আমি আপনার জন্য বিকাল ৫ টার জন্য সিনেমার টিকিট বুক করেছি
+  steps:
+  - intent: ticket
+  - action: utter_ticket
+
+- rule: Say 'টিকিটের মূল্য 200 টাকা ' anytime the user says টিকিটের দাম কত?
+  steps:
+  - intent: price
+  - action: utter_price
+
+- rule: Say 'মুভিটি বিকেল ৫টায়' anytime the user says সিনেমার সময় কি?
+  steps:
+  - intent: time
+  - action: utter_time
+
+- rule: Say 'দুঃখিত, আমি বুঝতে পারিনি' anytime the user says "NIT"
