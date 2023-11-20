@@ -1,0 +1,48 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ticket
+  - price
+  - time
+
+responses:
+  utter_greet:
+  - text: "নমস্কার! আপনি কেমন আছেন?"
+
+  utter_cheer_up:
+  - text: "এখানে আপনাকে উত্সাহিত করার জন্য একটি ছবি রয়েছে:"
+    image: "https://images.app.goo.gl/SZbeRzTC26JYz7X4A"
+
+  utter_did_that_help:
+  - text: "আমি কি আপনাকে সাহায্য করতে পেরেছি?"
+
+  utter_happy:
+  - text: "দুর্দান্ত!"
+
+  utter_goodbye:
+  - text: "বিদায়|"
+
+  utter_iamabot:
+  - text: "আমি একটি বট, রাসা দ্বারা চালিত|"
+
+  utter_ticket:
+  - text: "হ্যাঁ আমি আপনার জন্য টিকিট বুক করতে পারি"
+
+  utter_price:
+  - text: "টিকিটের মূল্য 200 টাকা "
+
+  utter_time:
+  - text: "মুভিটি বিকেল ৫টায়"
+
+utter_mayuri:
+- text: "দুঃখিত, আমি বুঝতে পারিনি"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
